@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Zaporski Lab"
+  description: "A Quarto website for the zaporski lab"
+  navbar:
+    left:
+      - text: "ZAPORSKI LAB"
+      - href: index.qmd
+        text: Home
+      - text: Research
+        menu:
+          - href: about.qmd
+            text: Thulium-169
+      - href: team.qmd
+        text: Team
+      - href: news.qmd
+        text: News
+      - href: publications.qmd
+        text: Publications
+      - href: contact.qmd
+        text: Contact Us
+  page-footer:
+    left: "© 2026 zaporski-lab"
+    center: "Built with Quarto"
+
+format:
+  html:
+    theme: journal
+    css: styles.css
+    toc: false
