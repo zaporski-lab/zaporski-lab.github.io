@@ -23,16 +23,65 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Zaporski Lab",
+    "title": "What is special about thulium?",
     "section": "",
-    "text": "Thulium-169\n\n\n\n\nLaunching in September 2026."
+    "text": "Thulium-169\n\n\nNew platform for Cavity QED and Quantum Metrology"
+  },
+  {
+    "objectID": "about.html#an-inner-shell-optical-clock-transition",
+    "href": "about.html#an-inner-shell-optical-clock-transition",
+    "title": "What is special about thulium?",
+    "section": "An inner-shell optical-clock transition",
+    "text": "An inner-shell optical-clock transition\nThulium’s lowest-energy fine-structure levels, \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{7/2})6\\text{s}^2\\) and \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{5/2})6\\text{s}^2\\), are linked by a 1-Hz-wide optical M1 transition at 1140 nm. Owed to the identical electronic configurations of these levels, the transition wavelength is largely immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude, compared to such atoms, lifting the requirements for cryogenic operation to realize a highly accurate and stable clock."
+  },
+  {
+    "objectID": "about.html#lucky-set-of-magic-wavelengths",
+    "href": "about.html#lucky-set-of-magic-wavelengths",
+    "title": "What is special about thulium?",
+    "section": "Lucky set of magic wavelengths",
+    "text": "Lucky set of magic wavelengths\nThulium interacts with light anisotropically, which leads to some dependence of the magic wavelength on the light’s polarization. For 1140-nm clock transition, and linearly-polarized trap light, the magic wavelenghts are found around 813 nm and 1064 nm for polarizations parallel and perpendicular to the quantization axis, respectively.\nBoth of these wavelenghts are quite fortunate in their own ways. Firstly, the laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s \\({}^1S_0 \\to {}^3P_0\\) optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for new physics."
+  },
+  {
+    "objectID": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
+    "href": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
+    "title": "What is special about thulium?",
+    "section": "Cooling transitions spanning a broad range of linewidths",
+    "text": "Cooling transitions spanning a broad range of linewidths"
+  },
+  {
+    "objectID": "about.html#microwave-clock-qubit",
+    "href": "about.html#microwave-clock-qubit",
+    "title": "What is special about thulium?",
+    "section": "Microwave clock qubit",
+    "text": "Microwave clock qubit\nIn the lowest fine-structure level of thulium, non-zero electronic angular momentum \\(J=\\frac{7}{2}\\) and the nuclear spin \\(I=\\frac{1}{2}\\) combine to two hyperfine-structure levels: \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz forming a robust microwave clock qubit. Compatibility with this encoding is unusual for lanthanides, and it is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing."
+  },
+  {
+    "objectID": "about.html#high-compatibility-with-measurement-based-squeezing",
+    "href": "about.html#high-compatibility-with-measurement-based-squeezing",
+    "title": "What is special about thulium?",
+    "section": "High compatibility with measurement-based squeezing",
+    "text": "High compatibility with measurement-based squeezing"
+  },
+  {
+    "objectID": "about.html#sensitivity-to-lorentz-invariance-violation",
+    "href": "about.html#sensitivity-to-lorentz-invariance-violation",
+    "title": "What is special about thulium?",
+    "section": "Sensitivity to Lorentz invariance violation",
+    "text": "Sensitivity to Lorentz invariance violation"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Zaporski Lab",
+    "title": "What do we do?",
     "section": "",
-    "text": "Zaporski Lab\n\n\nQuantum Metrology and Cavity QED\n\n\nJohns Hopkins University\n\n\n\n\nLaunching in September 2026."
+    "text": "Zaporski Lab\n\n\nQuantum Metrology and Cavity QED\n\n\nJohns Hopkins University"
+  },
+  {
+    "objectID": "index.html#we-are-funded-by",
+    "href": "index.html#we-are-funded-by",
+    "title": "What do we do?",
+    "section": "We are funded by:",
+    "text": "We are funded by:"
   },
   {
     "objectID": "publications.html",

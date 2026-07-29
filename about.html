@@ -46,6 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ffa7aff1ec5c5cca5c5c4a13fb783f1b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/accordion/accordion.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -156,6 +186,9 @@ ul.task-list li input[type="checkbox"] {
 <div class="hero-overlay">
 <div class="hero-title">
 Thulium-169
+</div>
+<div class="hero-subtitle">
+New platform for Cavity QED and Quantum Metrology
 </div>
 </div>
 </div>
@@ -260,9 +293,121 @@ Thulium-169
   requestAnimationFrame(() => { resize(); animate(); });
 })();
 </script>
-<p>Launching in September 2026.</p>
+<section id="what-is-special-about-thulium" class="level1">
+<h1>What is special about thulium?</h1>
+<p>Thulium belongs to the family of lanthanides and has one electron less than ytterbium, resulting in an open 4f-shell. Its only stable isotope is bosonic and carries nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span>. These properties result in a rich spectrum of energy levels with convenient properties.</p>
+<section id="an-inner-shell-optical-clock-transition" class="level2">
+<h2 class="anchored" data-anchor-id="an-inner-shell-optical-clock-transition">An inner-shell optical-clock transition</h2>
+<p>Thulium’s lowest-energy fine-structure levels, <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{7/2})6\text{s}^2\)</span> and <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{5/2})6\text{s}^2\)</span>, are linked by a 1-Hz-wide optical M1 transition at 1140 nm. Owed to the identical electronic configurations of these levels, the transition wavelength is largely immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude, compared to such atoms, lifting the requirements for cryogenic operation to realize a highly accurate and stable clock.</p>
+</section>
+<section id="lucky-set-of-magic-wavelengths" class="level2">
+<h2 class="anchored" data-anchor-id="lucky-set-of-magic-wavelengths">Lucky set of magic wavelengths</h2>
+<p>Thulium interacts with light anisotropically, which leads to some dependence of the magic wavelength on the light’s polarization. For 1140-nm clock transition, and linearly-polarized trap light, the magic wavelenghts are found around 813 nm and 1064 nm for polarizations parallel and perpendicular to the quantization axis, respectively.</p>
+<p>Both of these wavelenghts are quite fortunate in their own ways. Firstly, the laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s <span class="math inline">\({}^1S_0 \to {}^3P_0\)</span> optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for new physics.</p>
+</section>
+<section id="cooling-transitions-spanning-a-broad-range-of-linewidths" class="level2">
+<h2 class="anchored" data-anchor-id="cooling-transitions-spanning-a-broad-range-of-linewidths">Cooling transitions spanning a broad range of linewidths</h2>
+</section>
+<section id="microwave-clock-qubit" class="level2">
+<h2 class="anchored" data-anchor-id="microwave-clock-qubit">Microwave clock qubit</h2>
+<p>In the lowest fine-structure level of thulium, non-zero electronic angular momentum <span class="math inline">\(J=\frac{7}{2}\)</span> and the nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span> combine to two hyperfine-structure levels: <span class="math inline">\(F=3\)</span> and <span class="math inline">\(F=4\)</span>. Their <span class="math inline">\(m_F=0\)</span> states are spaced by 1.497 GHz forming a robust microwave clock qubit. Compatibility with this encoding is unusual for lanthanides, and it is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing.</p>
+</section>
+<section id="high-compatibility-with-measurement-based-squeezing" class="level2">
+<h2 class="anchored" data-anchor-id="high-compatibility-with-measurement-based-squeezing">High compatibility with measurement-based squeezing</h2>
+</section>
+<section id="sensitivity-to-lorentz-invariance-violation" class="level2">
+<h2 class="anchored" data-anchor-id="sensitivity-to-lorentz-invariance-violation">Sensitivity to Lorentz invariance violation</h2>
+</section>
+</section>
+<section id="frequently-asked-questions" class="level1">
+<h1>Frequently Asked Questions</h1>
+<div id="quarto-accordion-faq" class="accordion quarto-accordion">
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-ansitionsatfloats-1">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-ansitionsatfloats-1" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-ansitionsatfloats-1">
+<div class="accordion-header-content">
+Is 1-Hz-wide optical transition competitive with established mHz-wide optical transitions?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-ansitionsatfloats-1" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-ansitionsatfloats-1" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>Unless you have a perfect laser, it absolutely is. Limited by the laser noise, typical optical clocks operate with interrogation times in 1-100 ms range, well below the lifetime limits. They reach their long-term stability through averaging. On the AMO-side, the existing optical clock technology would benefit mostly from dead-time-free averaging and reduction of systematic shifts.</p>
+<p>In other words, thanks to averaging, a wider transition with a frequency set in stone can outperform a narrower transition with a frequency that floats.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-orlongergsensing-2">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-orlongergsensing-2" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-orlongergsensing-2">
+<div class="accordion-header-content">
+Why would I use spin-squeezing if I can interrogate the transition for longer?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-orlongergsensing-2" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-orlongergsensing-2" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>Spin-squeezing reduces the interrogation time required to reach maximal measurement resolution. If the measurement campaing entails a single-shot (which it never does) or if the signal to be measured is truly static (which it almost never is), squeezing is indeed redundant. Otherwise, it substantially increases the bandwidth of laser-locking/sensing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-aproblemavelength-3">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-aproblemavelength-3" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-aproblemavelength-3">
+<div class="accordion-header-content">
+Are dipolar interactions going to be a problem?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-aproblemavelength-3" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-aproblemavelength-3" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>Dipolar interactions are problematic in two out of three possible ways: they cause atom loss, diffusion of the Zeeman-state populations across different <span class="math inline">\(m_F\)</span>-states, but they do not introduce density dependent frequency shifts (at least not to the first order, if only the <span class="math inline">\(m_F=0\)</span> states are used in the operation of the optical clock). These processes are irrelevant, as long as they are slower than the decay time of the clock state, which is easy to achieve in low-density atomic samples.</p>
+<p>For high-density samples, operating the clock within a deep 3D-lattice should substantially suppress the loss (through a large lattice band-gap) and diffusion (through energetic penalty of the spin flip-flop introduced by a tensor light shift). Reaching this regime is technologically feasible given the 1064-nm magic wavelength.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-anshiftsnthesized-4">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-anshiftsnthesized-4" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-anshiftsnthesized-4">
+<div class="accordion-header-content">
+What about quadratic Zeeman shifts?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-anshiftsnthesized-4" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-anshiftsnthesized-4" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>One downside of thulium’s hyperfine structure is a non-negligible quadratic Zeeman shift affecting the optical clock transition frequency. With an aid of microwave rotations, a clock frequency free of this systematic can be synthesized.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-gthuliumenoidea-5">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-gthuliumenoidea-5" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-gthuliumenoidea-5">
+<div class="accordion-header-content">
+Why are there so few research groups studying thulium?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-gthuliumenoidea-5" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-gthuliumenoidea-5" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>Honestly, we have no idea.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -338,7 +483,7 @@ Thulium-169
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/zaporski-lab\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
