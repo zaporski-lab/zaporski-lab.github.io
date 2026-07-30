@@ -26,7 +26,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -295,31 +315,36 @@ New platform for Cavity QED and Quantum Metrology
 </script>
 <section id="what-is-special-about-thulium" class="level1">
 <h1>What is special about thulium?</h1>
-<p>Thulium belongs to the family of lanthanides and has one electron less than ytterbium, resulting in an open 4f-shell. Its only stable isotope is bosonic and carries nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span>. These properties result in a rich spectrum of energy levels with convenient properties.</p>
-<section id="an-inner-shell-optical-clock-transition" class="level2">
-<h2 class="anchored" data-anchor-id="an-inner-shell-optical-clock-transition">An inner-shell optical-clock transition</h2>
-<p>Thulium’s lowest-energy fine-structure levels, <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{7/2})6\text{s}^2\)</span> and <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{5/2})6\text{s}^2\)</span>, are linked by a 1-Hz-wide optical M1 transition at 1140 nm. Owed to the identical electronic configurations of these levels, the transition wavelength is largely immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude, compared to such atoms, lifting the requirements for cryogenic operation to realize a highly accurate and stable clock.</p>
+<p>Thulium is an open-4f-shell lanthanide with one less electron than ytterbium. Its only stable isotope is a boson with a nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span>. Thulium features a rich spectrum of energy levels with convenient properties for a number of applications. In particular, it complements the family of optical-clock atoms, experiencing vastly different systematic shifts and sensitivities to fundamental phenomena. In this context, it is exceptionally well positioned for the future optical-clock transportability and searches for Lorentz Invariance Violation (LIV).</p>
+<section id="configuration-preserving-optical-clock-transition" class="level2">
+<h2 class="anchored" data-anchor-id="configuration-preserving-optical-clock-transition">Configuration-preserving optical-clock transition</h2>
+<p>Thulium’s lowest-energy fine-structure levels, <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{7/2})6\text{s}^2\)</span> and <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{5/2})6\text{s}^2\)</span>, are linked by a 1-Hz-wide optical M1 transition at 1140 nm. Thanks to the identical electronic configurations of these levels, the transition wavelength is largely immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium.</p>
+<p>Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude, compared to such atoms, lifting the requirement for cryogenic operation to realize a highly accurate and stable clock.</p>
+<p>(WRITE ALSO ABOUT REDUCED COLLISIONAL BROADENING)</p>
+<p>Large electronic orbital momentum reintroduces sensitivity to some other perturbations, but they are more straight-forward to tame in comparison (see <a href="#faq">frequently asked questions</a>). At the same time, the clock transition with <span class="math inline">\(\Delta J \ne 0\)</span> gains sensitivity to phenomena that elude the <span class="math inline">\(J\)</span>-preserving transitions in divalent atoms.</p>
 </section>
 <section id="lucky-set-of-magic-wavelengths" class="level2">
 <h2 class="anchored" data-anchor-id="lucky-set-of-magic-wavelengths">Lucky set of magic wavelengths</h2>
-<p>Thulium interacts with light anisotropically, which leads to some dependence of the magic wavelength on the light’s polarization. For 1140-nm clock transition, and linearly-polarized trap light, the magic wavelenghts are found around 813 nm and 1064 nm for polarizations parallel and perpendicular to the quantization axis, respectively.</p>
-<p>Both of these wavelenghts are quite fortunate in their own ways. Firstly, the laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s <span class="math inline">\({}^1S_0 \to {}^3P_0\)</span> optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for new physics.</p>
+<p>For the 1140-nm clock transition there are two known magic wavelenghts, falling close to 813 nm and 1064 nm. Both of them are quite handy in their own ways. The laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s <span class="math inline">\(J\)</span>-preserving optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for physics beyond Standard Model.</p>
 </section>
 <section id="cooling-transitions-spanning-a-broad-range-of-linewidths" class="level2">
 <h2 class="anchored" data-anchor-id="cooling-transitions-spanning-a-broad-range-of-linewidths">Cooling transitions spanning a broad range of linewidths</h2>
+<p>Among the forest of spectral lines, at least three optical transitions present very high cyclicities and a convenient hierarchy of linewidths. The three-color MOT operation starts from the cooling on a 10-MHz-wide transition (410.6 nm), goes through the second stage on a 350-kHz-wide transition (530.7 nm), and concludes with the final stage on an 8-kHz-wide transition (506.2 nm). This provides a low-loss cooling mechanism that brings the atoms to sub-<span class="math inline">\(\mu\)</span>K temperatures prior to loading them into an optical lattice.</p>
 </section>
 <section id="microwave-clock-qubit" class="level2">
 <h2 class="anchored" data-anchor-id="microwave-clock-qubit">Microwave clock qubit</h2>
-<p>In the lowest fine-structure level of thulium, non-zero electronic angular momentum <span class="math inline">\(J=\frac{7}{2}\)</span> and the nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span> combine to two hyperfine-structure levels: <span class="math inline">\(F=3\)</span> and <span class="math inline">\(F=4\)</span>. Their <span class="math inline">\(m_F=0\)</span> states are spaced by 1.497 GHz forming a robust microwave clock qubit. Compatibility with this encoding is unusual for lanthanides, and it is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing.</p>
+<p>Because of the nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span> and the electronic <span class="math inline">\(J=\frac{7}{2}\)</span>, the lowest-energy fine-structure level splits into exactly two hyperfine-structure levels with <span class="math inline">\(F=3\)</span> and <span class="math inline">\(F=4\)</span>. Their <span class="math inline">\(m_F=0\)</span> states are spaced by 1.497 GHz, forming a robust microwave clock qubit. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing.</p>
 </section>
 <section id="high-compatibility-with-measurement-based-squeezing" class="level2">
 <h2 class="anchored" data-anchor-id="high-compatibility-with-measurement-based-squeezing">High compatibility with measurement-based squeezing</h2>
+<p>The hyperfine structure of thulium, and the convenient qubit encoding, drastically simplify generating entanglement through techniques of cavity QED. They reduce Raman scattering during dispersive cavity readout, allowing to implement deep measurement-based squeezing in a system comprised of <span class="math inline">\(N=10^4-10^6\)</span> atoms. With the cavity design optimized for collective cooperativity and collection efficiency, this can result in over 20 dB of metrological gain in an optical-clock atom - well exceeding the proof-of-concept demonstrations from small-scaled systems<span class="citation" data-cites="Pedrozo2020"><sup><a href="#ref-Pedrozo2020" role="doc-biblioref">1</a></sup></span>, often limited in size by much smaller spectral separation of optical transitions.</p>
 </section>
 <section id="sensitivity-to-lorentz-invariance-violation" class="level2">
 <h2 class="anchored" data-anchor-id="sensitivity-to-lorentz-invariance-violation">Sensitivity to Lorentz invariance violation</h2>
+<p>To date, the most stringent tests of LIV in the electron sector exploited the metastable levels in Yb<span class="math inline">\({}^+\)</span>, populated via an optical E3 transition. The electronic and hyperfine structure of those levels is exactly identical to that of the lowest-energy levels in thulium. Performing similar tests with a large ensemble of neutral atoms significantly expands the bandwidth of detectable signals.</p>
 </section>
 </section>
-<section id="frequently-asked-questions" class="level1">
+<section id="faq" class="level1">
 <h1>Frequently Asked Questions</h1>
 <div id="quarto-accordion-faq" class="accordion quarto-accordion">
 <div class="accordion-item">
@@ -340,14 +365,63 @@ Is 1-Hz-wide optical transition competitive with established mHz-wide optical tr
 </div>
 </div>
 <div class="accordion-item">
-<div class="accordion-header" id="heading-quarto-accordion-faq-orlongergsensing-2">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-orlongergsensing-2" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-orlongergsensing-2">
+<div class="accordion-header" id="heading-quarto-accordion-faq-aproblemavelength-2">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-aproblemavelength-2" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-aproblemavelength-2">
+<div class="accordion-header-content">
+Are dipolar interactions going to be a problem?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-aproblemavelength-2" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-aproblemavelength-2" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>Dipolar interactions are problematic in two out of three possible ways: they cause atom loss, diffusion of the Zeeman-state populations across different <span class="math inline">\(m_F\)</span>-states, but they do not introduce density dependent frequency shifts (at least not to the first order, if only the <span class="math inline">\(m_F=0\)</span> states are used in the operation of the optical clock). These processes are irrelevant, as long as they are slower than the decay time of the clock state, which is easy to achieve in low-density atomic samples.</p>
+<p>For high-density samples, operating the clock within a deep 3D-lattice should substantially suppress the loss (through a large lattice band-gap) and diffusion (through energetic penalty of the spin flip-flop introduced by a tensor light shift). Reaching this regime for sub-Gauss magnetic fields is technologically feasible given the 1064-nm magic wavelength.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-anshiftsrotations-3">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-anshiftsrotations-3" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-anshiftsrotations-3">
+<div class="accordion-header-content">
+What about quadratic Zeeman shifts?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-anshiftsrotations-3" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-anshiftsrotations-3" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>One downside of thulium’s hyperfine structure is a non-negligible quadratic Zeeman shift affecting the optical clock transition frequency. It is possible to create a synthetic clock frequency free of this systematic, by using mid-interrogation-sequence microwave rotations.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-htshiftstionaxis-4">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-htshiftstionaxis-4" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-htshiftstionaxis-4">
+<div class="accordion-header-content">
+What about tensor light shifts?
+</div>
+</button>
+</div>
+<div id="collapse-quarto-accordion-faq-htshiftstionaxis-4" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-htshiftstionaxis-4" data-bs-parent="#quarto-accordion-faq">
+<div class="accordion-body">
+<div class="accordion-body-content">
+<p>Thulium interacts with light anisotropically, which leads to some dependence of the magic wavelength on the light’s polarization, as referenced to the quantization axis.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="heading-quarto-accordion-faq-orlongergsensing-5">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-orlongergsensing-5" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-orlongergsensing-5">
 <div class="accordion-header-content">
 Why would I use spin-squeezing if I can interrogate the transition for longer?
 </div>
 </button>
 </div>
-<div id="collapse-quarto-accordion-faq-orlongergsensing-2" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-orlongergsensing-2" data-bs-parent="#quarto-accordion-faq">
+<div id="collapse-quarto-accordion-faq-orlongergsensing-5" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-orlongergsensing-5" data-bs-parent="#quarto-accordion-faq">
 <div class="accordion-body">
 <div class="accordion-body-content">
 <p>Spin-squeezing reduces the interrogation time required to reach maximal measurement resolution. If the measurement campaing entails a single-shot (which it never does) or if the signal to be measured is truly static (which it almost never is), squeezing is indeed redundant. Otherwise, it substantially increases the bandwidth of laser-locking/sensing.</p>
@@ -356,47 +430,14 @@ Why would I use spin-squeezing if I can interrogate the transition for longer?
 </div>
 </div>
 <div class="accordion-item">
-<div class="accordion-header" id="heading-quarto-accordion-faq-aproblemavelength-3">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-aproblemavelength-3" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-aproblemavelength-3">
-<div class="accordion-header-content">
-Are dipolar interactions going to be a problem?
-</div>
-</button>
-</div>
-<div id="collapse-quarto-accordion-faq-aproblemavelength-3" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-aproblemavelength-3" data-bs-parent="#quarto-accordion-faq">
-<div class="accordion-body">
-<div class="accordion-body-content">
-<p>Dipolar interactions are problematic in two out of three possible ways: they cause atom loss, diffusion of the Zeeman-state populations across different <span class="math inline">\(m_F\)</span>-states, but they do not introduce density dependent frequency shifts (at least not to the first order, if only the <span class="math inline">\(m_F=0\)</span> states are used in the operation of the optical clock). These processes are irrelevant, as long as they are slower than the decay time of the clock state, which is easy to achieve in low-density atomic samples.</p>
-<p>For high-density samples, operating the clock within a deep 3D-lattice should substantially suppress the loss (through a large lattice band-gap) and diffusion (through energetic penalty of the spin flip-flop introduced by a tensor light shift). Reaching this regime is technologically feasible given the 1064-nm magic wavelength.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header" id="heading-quarto-accordion-faq-anshiftsnthesized-4">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-anshiftsnthesized-4" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-anshiftsnthesized-4">
-<div class="accordion-header-content">
-What about quadratic Zeeman shifts?
-</div>
-</button>
-</div>
-<div id="collapse-quarto-accordion-faq-anshiftsnthesized-4" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-anshiftsnthesized-4" data-bs-parent="#quarto-accordion-faq">
-<div class="accordion-body">
-<div class="accordion-body-content">
-<p>One downside of thulium’s hyperfine structure is a non-negligible quadratic Zeeman shift affecting the optical clock transition frequency. With an aid of microwave rotations, a clock frequency free of this systematic can be synthesized.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header" id="heading-quarto-accordion-faq-gthuliumenoidea-5">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-gthuliumenoidea-5" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-gthuliumenoidea-5">
+<div class="accordion-header" id="heading-quarto-accordion-faq-gthuliumenoidea-6">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-quarto-accordion-faq-gthuliumenoidea-6" aria-expanded="false" aria-controls="collapse-quarto-accordion-faq-gthuliumenoidea-6">
 <div class="accordion-header-content">
 Why are there so few research groups studying thulium?
 </div>
 </button>
 </div>
-<div id="collapse-quarto-accordion-faq-gthuliumenoidea-5" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-gthuliumenoidea-5" data-bs-parent="#quarto-accordion-faq">
+<div id="collapse-quarto-accordion-faq-gthuliumenoidea-6" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-gthuliumenoidea-6" data-bs-parent="#quarto-accordion-faq">
 <div class="accordion-body">
 <div class="accordion-body-content">
 <p>Honestly, we have no idea.</p>
@@ -407,9 +448,14 @@ Why are there so few research groups studying thulium?
 </div>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Pedrozo2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Pedrozo-Peñafiel, E. <em>et al.</em> <a href="https://doi.org/10.1038/s41586-020-3006-1">Entanglement on an optical atomic-clock transition</a>. <em>Nature</em> <strong>588</strong>, 414–418 (2020).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
