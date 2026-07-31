@@ -32,42 +32,42 @@
     "href": "about.html#configuration-preserving-optical-clock-transition",
     "title": "What is special about thulium?",
     "section": "Configuration-preserving optical-clock transition",
-    "text": "Configuration-preserving optical-clock transition\nThulium’s lowest-energy fine-structure levels, \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{7/2})6\\text{s}^2\\) and \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{5/2})6\\text{s}^2\\), are linked by a 1-Hz-wide optical M1 transition at 1140 nm. Thanks to the identical electronic configurations of these levels, the transition wavelength is largely immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium.\nMost notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude, compared to such atoms, lifting the requirement for cryogenic operation to realize a highly accurate and stable clock.\n(WRITE ALSO ABOUT REDUCED COLLISIONAL BROADENING)\nLarge electronic orbital momentum reintroduces sensitivity to some other perturbations, but they are more straight-forward to tame in comparison (see frequently asked questions). At the same time, the clock transition with \\(\\Delta J \\ne 0\\) gains sensitivity to phenomena that elude the \\(J\\)-preserving transitions in divalent atoms."
+    "text": "Configuration-preserving optical-clock transition\nThulium’s lowest-energy fine-structure levels, \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{7/2})6\\text{s}^2\\) and \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{5/2})6\\text{s}^2\\), are linked by a 1-Hz-wide optical M1 transition at 1140 nm. The identical electronic configurations of these levels render the transition wavelength immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude4, compared to such atoms, lifting the requirement for cryogenic operation5,6 to realize a highly accurate and stable clock."
   },
   {
     "objectID": "about.html#lucky-set-of-magic-wavelengths",
     "href": "about.html#lucky-set-of-magic-wavelengths",
     "title": "What is special about thulium?",
     "section": "Lucky set of magic wavelengths",
-    "text": "Lucky set of magic wavelengths\nFor the 1140-nm clock transition there are two known magic wavelenghts, falling close to 813 nm and 1064 nm. Both of them are quite handy in their own ways. The laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s \\(J\\)-preserving optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for physics beyond Standard Model."
+    "text": "Lucky set of magic wavelengths\nFor the 1140-nm clock transition there are two known magic wavelenghts4, falling close to 813 nm and 1064 nm. Both of them are quite handy in their own ways. The laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s 698 nm optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for physics beyond Standard Model7."
   },
   {
     "objectID": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
     "href": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
     "title": "What is special about thulium?",
     "section": "Cooling transitions spanning a broad range of linewidths",
-    "text": "Cooling transitions spanning a broad range of linewidths\nAmong the forest of spectral lines, at least three optical transitions present very high cyclicities and a convenient hierarchy of linewidths. The three-color MOT operation starts from the cooling on a 10-MHz-wide transition (410.6 nm), goes through the second stage on a 350-kHz-wide transition (530.7 nm), and concludes with the final stage on an 8-kHz-wide transition (506.2 nm). This provides a low-loss cooling mechanism that brings the atoms to sub-\\(\\mu\\)K temperatures prior to loading them into an optical lattice."
+    "text": "Cooling transitions spanning a broad range of linewidths\nAmong the forest of spectral lines, at least three optical transitions present very high cyclicities and a convenient hierarchy of linewidths. The three-color MOT operation starts from the cooling on a 10-MHz-wide transition (410.6 nm), goes through the second stage on a 350-kHz-wide transition (530.7 nm), and concludes with the final stage on an 8-kHz-wide transition (506.2 nm). This provides a low-loss cooling mechanism that brings the atoms to sub-\\(\\mu\\)K temperatures prior to loading them into an optical lattice8."
   },
   {
     "objectID": "about.html#microwave-clock-qubit",
     "href": "about.html#microwave-clock-qubit",
     "title": "What is special about thulium?",
     "section": "Microwave clock qubit",
-    "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine-structure levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz, forming a robust microwave clock qubit. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing."
+    "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine-structure levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz, forming a robust microwave clock qubit9. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing."
   },
   {
     "objectID": "about.html#high-compatibility-with-measurement-based-squeezing",
     "href": "about.html#high-compatibility-with-measurement-based-squeezing",
     "title": "What is special about thulium?",
     "section": "High compatibility with measurement-based squeezing",
-    "text": "High compatibility with measurement-based squeezing\nThe hyperfine structure of thulium, and the convenient qubit encoding, drastically simplify generating entanglement through techniques of cavity QED. They reduce Raman scattering during dispersive cavity readout, allowing to implement deep measurement-based squeezing in a system comprised of \\(N=10^4-10^6\\) atoms. With the cavity design optimized for collective cooperativity and collection efficiency, this can result in over 20 dB of metrological gain in an optical-clock atom - well exceeding the proof-of-concept demonstrations from small-scaled systems1, often limited in size by much smaller spectral separation of optical transitions."
+    "text": "High compatibility with measurement-based squeezing\nThe hyperfine structure of thulium, and the convenient qubit encoding, drastically simplify generating entanglement through techniques of cavity QED. They reduce Raman scattering during dispersive cavity readout, allowing to implement deep measurement-based squeezing in a system comprised of \\(N=10^4-10^6\\) atoms10. With the cavity design optimized for collective cooperativity and collection efficiency, this can result in over 20 dB of metrological gain in an optical-clock atom system - well exceeding the proof-of-concept demonstrations11–14 from small-scaled systems, often limited in size by much smaller spectral separation of spin-pumping optical transitions."
   },
   {
     "objectID": "about.html#sensitivity-to-lorentz-invariance-violation",
     "href": "about.html#sensitivity-to-lorentz-invariance-violation",
     "title": "What is special about thulium?",
     "section": "Sensitivity to Lorentz invariance violation",
-    "text": "Sensitivity to Lorentz invariance violation\nTo date, the most stringent tests of LIV in the electron sector exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition. The electronic and hyperfine structure of those levels is exactly identical to that of the lowest-energy levels in thulium. Performing similar tests with a large ensemble of neutral atoms significantly expands the bandwidth of detectable signals."
+    "text": "Sensitivity to Lorentz invariance violation\nTo date, the most stringent tests of LIV in the electron sector exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition15,16. The electronic and hyperfine structure of those levels is exactly identical to that of the lowest-energy levels in thulium. Performing similar tests17 with a large ensemble of neutral atoms significantly expands the bandwidth of detectable signals."
   },
   {
     "objectID": "index.html",

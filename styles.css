@@ -16,6 +16,11 @@ body {
   padding: 0;
 }
 
+/* In-text citation links */
+a[role="doc-biblioref"] {
+  color: #E64B35;
+}
+
 main,
 #quarto-document-content,
 .quarto-container,
