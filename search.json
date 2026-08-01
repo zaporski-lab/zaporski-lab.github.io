@@ -46,7 +46,7 @@
     "href": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
     "title": "What is special about thulium?",
     "section": "Cooling transitions spanning a broad range of linewidths",
-    "text": "Cooling transitions spanning a broad range of linewidths\nAmong the forest of spectral lines, at least three optical transitions present very high cyclicities and a convenient hierarchy of linewidths. The three-color MOT operation starts from the cooling on a 10-MHz-wide transition (410.6 nm), goes through the second stage on a 350-kHz-wide transition (530.7 nm), and concludes with the final stage on an 8-kHz-wide transition (506.2 nm). This provides a low-loss cooling mechanism that brings the atoms to sub-\\(\\mu\\)K temperatures prior to loading them into an optical lattice8."
+    "text": "Cooling transitions spanning a broad range of linewidths\nAmong the forest of spectral lines, at least three optical transitions present very high cyclicities and a convenient hierarchy of linewidths. The three-color magneto-optical trap operation starts from the cooling on a 10-MHz-wide transition (410.6 nm), goes through the second stage on a 350-kHz-wide transition (530.7 nm), and concludes with the final stage on an 8-kHz-wide transition (506.2 nm). This provides a low-loss cooling mechanism that brings the atoms to sub-\\(\\mu\\)K temperatures prior to loading them into an optical lattice8."
   },
   {
     "objectID": "about.html#microwave-clock-qubit",
