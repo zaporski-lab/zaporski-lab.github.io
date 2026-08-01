@@ -149,6 +149,38 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<style>
+  .hero-banner {
+    position: relative;
+    margin-top: calc(-1 * var(--quarto-navbar-height, 56px));
+    padding-top: var(--quarto-navbar-height, 56px);
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .hero-frame {
+    position: relative;
+    min-height: 360px;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    position: relative;
+    z-index: 2;
+  }
+</style>
 <div class="hero-banner">
 <div id="hero-animation" class="hero-frame">
 
@@ -169,18 +201,27 @@ Contact Us
   host.appendChild(canvas);
 
   const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
   let width = 0;
   let height = 0;
   let dpr = window.devicePixelRatio || 1;
+
+  let rafId = 0;
+  let isVisible = false;
+  let isActive = false;
+  let hovered = false;
+  let pointerInside = false;
+  let lastFrameTime = 0;
+
+  const maxFps = 60;
+  const minFrameInterval = 1000 / maxFps;
 
   ctx.lineWidth = 1.05;
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 
-  let mouse = { x: 0, y: 0 };
-  window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
-  window.addEventListener('touchmove', (e) => { mouse.x = e.touches[0].clientX; mouse.y = e.touches[0].clientY; });
-
+  const mouse = { x: 0, y: 0 };
   const symbols = [];
   const spacing = 84;
 
@@ -201,24 +242,122 @@ Contact Us
     width = host.clientWidth || window.innerWidth;
     height = host.clientHeight || 360;
     dpr = window.devicePixelRatio || 1;
+
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
+
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.scale(dpr, dpr);
-    ctx.lineWidth = 1.05;
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-    if (!mouse.x && !mouse.y) { mouse.x = width / 2; mouse.y = height / 2; }
+
+    if (!mouse.x && !mouse.y) {
+      mouse.x = width / 2;
+      mouse.y = height / 2;
+    }
+
     buildGrid();
     drawFrame();
   }
 
+  function startAnimation() {
+    if (isActive) return;
+    isActive = true;
+    lastFrameTime = 0;
+    rafId = requestAnimationFrame(animate);
+  }
+
+  function stopAnimation() {
+    if (!isActive) return;
+    isActive = false;
+    cancelAnimationFrame(rafId);
+    rafId = 0;
+  }
+
+  function isHeroInViewport() {
+    const rect = host.getBoundingClientRect();
+    return rect.bottom > 0 && rect.top < window.innerHeight;
+  }
+
+  function refreshRunState() {
+    const canRun = isVisible && hovered && pointerInside && !document.hidden && isHeroInViewport();
+    if (canRun) {
+      startAnimation();
+    } else {
+      stopAnimation();
+    }
+  }
+
+  function updateVisibility(visible) {
+    isVisible = visible;
+    refreshRunState();
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    const entry = entries[0];
+    updateVisibility(entry && entry.isIntersecting);
+  }, { threshold: 0.1 });
+
+  observer.observe(host);
+
+  document.addEventListener('visibilitychange', () => {
+    refreshRunState();
+  });
+
+  window.addEventListener('scroll', () => {
+    if (!isHeroInViewport()) {
+      hovered = false;
+      pointerInside = false;
+    }
+    refreshRunState();
+  }, { passive: true });
+
+  host.addEventListener('pointerenter', () => {
+    hovered = true;
+    pointerInside = true;
+    refreshRunState();
+  });
+
+  host.addEventListener('pointerleave', () => {
+    hovered = false;
+    pointerInside = false;
+    refreshRunState();
+  });
+
+  host.addEventListener('pointermove', (e) => {
+    const rect = host.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+
+  host.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    if (!touch) return;
+    hovered = true;
+    pointerInside = true;
+    const rect = host.getBoundingClientRect();
+    mouse.x = touch.clientX - rect.left;
+    mouse.y = touch.clientY - rect.top;
+    refreshRunState();
+  }, { passive: true });
+
+  host.addEventListener('touchend', () => {
+    hovered = false;
+    pointerInside = false;
+    refreshRunState();
+  }, { passive: true });
+
   window.addEventListener('resize', resize);
 
   function lerp(a, b, t) { return a + (b - a) * t; }
-  function mix(c1, c2, t) { return { r: Math.round(lerp(c1.r, c2.r, t)), g: Math.round(lerp(c1.g, c2.g, t)), b: Math.round(lerp(c1.b, c2.b, t)) }; }
+  function mix(c1, c2, t) {
+    return {
+      r: Math.round(lerp(c1.r, c2.r, t)),
+      g: Math.round(lerp(c1.g, c2.g, t)),
+      b: Math.round(lerp(c1.b, c2.b, t))
+    };
+  }
+
   function getColor(dist, maxDist) {
     const t = Math.max(0, Math.min(1, 1 - dist / maxDist));
     const far = { r: 68, g: 71, b: 77 };
@@ -230,34 +369,90 @@ Contact Us
   }
 
   function drawSymbol(x, y, angle, color, strength) {
-    const r = 15; const lineLen = 10;
-    ctx.save(); ctx.translate(x, y); ctx.shadowColor = color; ctx.shadowBlur = 2 + 10 * strength;
-    ctx.beginPath(); ctx.arc(0, 0, r, Math.PI, 0); ctx.strokeStyle = color; ctx.stroke();
-    let dx = Math.cos(angle); let dy = Math.sin(angle);
+    const r = 15;
+    const lineLen = 10;
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.shadowColor = color;
+    ctx.shadowBlur = 2 + 10 * strength;
+    ctx.beginPath();
+    ctx.arc(0, 0, r, Math.PI, 0);
+    ctx.strokeStyle = color;
+    ctx.stroke();
+
+    let dx = Math.cos(angle);
+    let dy = Math.sin(angle);
     if (dy > 0) { dx = -dx; dy = -dy; }
-    const len = Math.hypot(dx, dy); dx /= len; dy /= len;
-    const endX = dx * (r + lineLen); const endY = dy * (r + lineLen);
-    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(endX, endY); ctx.stroke();
-    const arrowSize = 3.5; const px = -dy; const py = dx;
-    ctx.beginPath(); ctx.moveTo(endX, endY); ctx.lineTo(endX - dx * arrowSize + px * arrowSize * 0.6, endY - dy * arrowSize + py * arrowSize * 0.6); ctx.lineTo(endX - dx * arrowSize - px * arrowSize * 0.6, endY - dy * arrowSize - py * arrowSize * 0.6); ctx.closePath(); ctx.fillStyle = color; ctx.fill();
-    ctx.beginPath(); ctx.arc(0, 0, 1.8, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+
+    const len = Math.hypot(dx, dy);
+    dx /= len;
+    dy /= len;
+
+    const endX = dx * (r + lineLen);
+    const endY = dy * (r + lineLen);
+
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(endX, endY);
+    ctx.stroke();
+
+    const arrowSize = 3.5;
+    const px = -dy;
+    const py = dx;
+
+    ctx.beginPath();
+    ctx.moveTo(endX, endY);
+    ctx.lineTo(endX - dx * arrowSize + px * arrowSize * 0.6, endY - dy * arrowSize + py * arrowSize * 0.6);
+    ctx.lineTo(endX - dx * arrowSize - px * arrowSize * 0.6, endY - dy * arrowSize - py * arrowSize * 0.6);
+    ctx.closePath();
+    ctx.fillStyle = color;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(0, 0, 1.8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
   }
 
   function drawFrame() {
-    ctx.fillStyle = '#0d0d0d'; ctx.fillRect(0, 0, width, height);
+    ctx.fillStyle = '#0d0d0d';
+    ctx.fillRect(0, 0, width, height);
+
     const gradient = ctx.createRadialGradient(width / 2, height * 0.35, 100, width / 2, height / 2, width);
-    gradient.addColorStop(0, 'rgba(255,255,255,0.03)'); gradient.addColorStop(1, 'rgba(0,0,0,0.25)');
-    ctx.fillStyle = gradient; ctx.fillRect(0, 0, width, height);
+    gradient.addColorStop(0, 'rgba(255,255,255,0.03)');
+    gradient.addColorStop(1, 'rgba(0,0,0,0.25)');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, width, height);
+
     const maxDist = 700;
     for (const s of symbols) {
-      const dx = mouse.x - s.x; const dy = mouse.y - s.y; const dist = Math.hypot(dx, dy); const angle = Math.atan2(dy, dx); const c = getColor(dist, maxDist);
-      ctx.globalAlpha = 0.22 + 0.78 * Math.pow(c.strength, 2); drawSymbol(s.x, s.y, angle, c.css, c.strength);
+      const dx = mouse.x - s.x;
+      const dy = mouse.y - s.y;
+      const dist = Math.hypot(dx, dy);
+      const angle = Math.atan2(dy, dx);
+      const c = getColor(dist, maxDist);
+      ctx.globalAlpha = 0.22 + 0.78 * Math.pow(c.strength, 2);
+      drawSymbol(s.x, s.y, angle, c.css, c.strength);
     }
+
     ctx.globalAlpha = 1;
   }
 
-  function animate() { drawFrame(); requestAnimationFrame(animate); }
-  requestAnimationFrame(() => { resize(); animate(); });
+  function animate(now) {
+    if (!isActive) return;
+
+    if (!lastFrameTime || now - lastFrameTime >= minFrameInterval) {
+      drawFrame();
+      lastFrameTime = now;
+    }
+
+    rafId = requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(() => {
+    resize();
+    updateVisibility(host.getBoundingClientRect().top < window.innerHeight);
+  });
 })();
 </script>
 <p>Launching in September 2026.</p>

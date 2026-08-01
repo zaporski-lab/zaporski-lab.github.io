@@ -16,6 +16,14 @@ body {
   padding: 0;
 }
 
+@media (pointer: coarse) {
+  .popover,
+  [role="tooltip"],
+  .citation-popup {
+    display: none !important;
+  }
+}
+
 /* In-text citation links */
 a[role="doc-biblioref"] {
   color: #E64B35;
