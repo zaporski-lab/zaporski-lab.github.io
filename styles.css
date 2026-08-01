@@ -8,6 +8,10 @@
   --bs-border-color: #c7c7c7;
 }
 
+html {
+  background-color: #111111;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   color: var(--bs-body-color);
@@ -16,13 +20,6 @@ body {
   padding: 0;
 }
 
-@media (pointer: coarse) {
-  .popover,
-  [role="tooltip"],
-  .citation-popup {
-    display: none !important;
-  }
-}
 
 /* In-text citation links */
 a[role="doc-biblioref"] {
