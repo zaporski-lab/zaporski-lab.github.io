@@ -39,7 +39,7 @@
     "href": "about.html#lucky-set-of-magic-wavelengths",
     "title": "What is special about thulium?",
     "section": "Lucky set of magic wavelengths",
-    "text": "Lucky set of magic wavelengths\nFor the 1140-nm clock transition there are two known magic wavelenghts4, falling close to 813 nm and 1064 nm. Both of them are quite handy in their own ways. The laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelenght of strontium’s 698 nm optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for physics beyond Standard Model7."
+    "text": "Lucky set of magic wavelengths\nFor the 1140-nm clock transition there are two known magic wavelengths4, falling close to 813 nm and 1064 nm. Both of them are quite handy in their own ways. The laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelength of strontium’s 698 nm optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for physics beyond Standard Model7."
   },
   {
     "objectID": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
@@ -53,21 +53,28 @@
     "href": "about.html#microwave-clock-qubit",
     "title": "What is special about thulium?",
     "section": "Microwave clock qubit",
-    "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine-structure levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz, forming a robust microwave clock qubit9. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing."
+    "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz, forming a robust microwave clock qubit9. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing."
   },
   {
-    "objectID": "about.html#high-compatibility-with-measurement-based-squeezing",
-    "href": "about.html#high-compatibility-with-measurement-based-squeezing",
+    "objectID": "about.html#deep-measurement-based-squeezing",
+    "href": "about.html#deep-measurement-based-squeezing",
     "title": "What is special about thulium?",
-    "section": "High compatibility with measurement-based squeezing",
-    "text": "High compatibility with measurement-based squeezing\nThe hyperfine structure of thulium, and the convenient qubit encoding, drastically simplify generating entanglement through techniques of cavity QED. They reduce Raman scattering during dispersive cavity readout, allowing to implement deep measurement-based squeezing in a system comprised of \\(N=10^4-10^6\\) atoms10. With the cavity design optimized for collective cooperativity and collection efficiency, this can result in over 20 dB of metrological gain in an optical-clock atom system - well exceeding the proof-of-concept demonstrations11–14 from small-scaled systems, often limited in size by much smaller spectral separation of spin-pumping optical transitions."
+    "section": "Deep measurement-based squeezing",
+    "text": "Deep measurement-based squeezing\nThe hyperfine structure of thulium, and the convenient qubit encoding, drastically simplify generating entanglement through techniques of cavity QED. They suppress residual spin pumping during dispersive cavity readout, allowing to implement deep measurement-based squeezing in a system comprised of \\(N=10^4-10^6\\) atoms11. With the cavity design optimized for collective cooperativity and collection efficiency, we are headed towards over 20 dB of metrological gain in an optical-clock atom system - well exceeding the proof-of-concept demonstrations12–15 from small-scale systems, often limited in size by spectral proximity of spin pumping transitions to dispersively-shifted cavity resonance."
   },
   {
-    "objectID": "about.html#sensitivity-to-lorentz-invariance-violation",
-    "href": "about.html#sensitivity-to-lorentz-invariance-violation",
+    "objectID": "about.html#broadband-search-for-lorentz-invariance-violation",
+    "href": "about.html#broadband-search-for-lorentz-invariance-violation",
     "title": "What is special about thulium?",
-    "section": "Sensitivity to Lorentz invariance violation",
-    "text": "Sensitivity to Lorentz invariance violation\nTo date, the most stringent tests of LIV in the electron sector exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition15,16. The electronic and hyperfine structure of those levels is exactly identical to that of the lowest-energy levels in thulium. Performing similar tests17 with a large ensemble of neutral atoms significantly expands the bandwidth of detectable signals."
+    "section": "Broadband search for Lorentz Invariance Violation",
+    "text": "Broadband search for Lorentz Invariance Violation\nTo date, the most stringent tests of LIV in the electron sector exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition16,17. The electronic configuration and hyperfine structure of those levels are identical to these of the lowest-energy levels in thulium. We are planning to perform similar tests18 with a large ensemble of neutral atoms to significantly expand the bandwidth of detectable signals and target the LIV backgrounds from ultralight dark matter19."
+  },
+  {
+    "objectID": "about.html#active-optical-frequency-standard",
+    "href": "about.html#active-optical-frequency-standard",
+    "title": "What is special about thulium?",
+    "section": "Active optical frequency standard",
+    "text": "Active optical frequency standard\nThanks to its low black-body radiation sensitivity, thulium is an excellent candidate for a transportable optical clock. One technological barrier towards this goal is incompatibility of modern narrow-linewidth lasers with transport. Achieving continuous-wave lasing on the clock transition would completely bypass the need for such a technology, and we plan to leverage our optical cavity to do exactly that20. We have identified a convenient collective repumping scheme with a potential to cancel pump-induced Stark shifts through a highly-symmetric lasing cycle."
   },
   {
     "objectID": "index.html",
