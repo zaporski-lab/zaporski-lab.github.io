@@ -67,14 +67,14 @@
     "href": "about.html#broadband-search-for-lorentz-invariance-violation",
     "title": "What is special about thulium?",
     "section": "Broadband search for Lorentz Invariance Violation",
-    "text": "Broadband search for Lorentz Invariance Violation\nTo date, the most stringent tests of LIV in the electron sector exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition16,17. The electronic configuration and hyperfine structure of those levels are identical to these of the lowest-energy levels in thulium. We are planning to perform similar tests18 with a large ensemble of neutral atoms to significantly expand the bandwidth of detectable signals and target the LIV backgrounds from ultralight dark matter19."
+    "text": "Broadband search for Lorentz Invariance Violation\nTo date, the most stringent tests of LIV in the electron sector have exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition16,17. The lowest-energy levels in thulium share the same electronic configuration and hyperfine structure as these metastable Yb\\({}^+\\) levels, making them similarly sensitive to LIV18. At the same time, neutral atoms can be trapped in much larger numbers than ions. By performing analogous LIV tests with neutral thulium, we can therefore significantly broaden the bandwidth of detectable signals, enabling searches for LIV backgrounds associated with ultralight dark matter19."
   },
   {
     "objectID": "about.html#active-optical-frequency-standard",
     "href": "about.html#active-optical-frequency-standard",
     "title": "What is special about thulium?",
     "section": "Active optical frequency standard",
-    "text": "Active optical frequency standard\nThanks to its low black-body radiation sensitivity, thulium is an excellent candidate for a transportable optical clock. One technological barrier towards this goal is incompatibility of modern narrow-linewidth lasers with transport. Achieving continuous-wave lasing on the clock transition would completely bypass the need for such a technology, and we plan to leverage our optical cavity to do exactly that20. We have identified a convenient collective repumping scheme with a potential to cancel pump-induced Stark shifts through a highly-symmetric lasing cycle."
+    "text": "Active optical frequency standard\nThanks to its low black-body radiation sensitivity, thulium is an excellent candidate for a transportable optical clock. One technological barrier towards this goal is incompatibility of modern narrow-linewidth lasers with transport. Achieving continuous-wave lasing on the clock transition would completely bypass the need for such a technology, and we plan to leverage our Cavity QED setup to do exactly that20. We have identified a convenient collective repumping scheme with a potential to cancel pump-induced Stark shifts through a highly-symmetric lasing cycle.\n\n\n\n\nTransitions involved in the operation of continuous-wave optical clock laser. In steady-state, the system undergoes stimulated emission of coherent 564.4-nm (3) and 1140.1-nm (4) light into the cavity mode."
   },
   {
     "objectID": "index.html",

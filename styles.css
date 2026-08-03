@@ -230,3 +230,38 @@ a:focus {
 .page-link:hover {
   color: #000000;
 }
+
+div.figure,
+.figure {
+  display: block;
+  width: min(33%, 520px);
+  margin: 1.5rem auto;
+}
+
+div.figure .quarto-figure-center,
+.quarto-figure-center {
+  text-align: center;
+}
+
+div.figure figure,
+figure.figure {
+  margin: 0;
+}
+
+div.figure img,
+.figure img,
+figure.figure img,
+.img-fluid.figure-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.figure figcaption,
+.figure figcaption,
+figure.figure figcaption {
+  width: 100%;
+  text-align: left;
+}
