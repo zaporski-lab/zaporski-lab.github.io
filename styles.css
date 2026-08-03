@@ -234,7 +234,7 @@ a:focus {
 div.figure,
 .figure {
   display: block;
-  width: min(33%, 520px);
+  width: clamp(0px, 480px, 100%);
   margin: 1.5rem auto;
 }
 
