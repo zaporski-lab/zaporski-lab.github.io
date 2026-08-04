@@ -238,6 +238,58 @@ div.figure,
   margin: 1.5rem auto;
 }
 
+.photo-container {
+  position: relative;
+}
+
+.card-img-top {
+  display: block;
+}
+
+.photo-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  color: white;
+
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  
+  padding: 0.2rem 0;
+
+
+}
+
+.photo-container > * {
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding-top: 0.1rem;
+}
+
+.grid {
+  align-items: stretch;
+}
+
+.grid > div {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+}
+
+.card {
+  height: 100%;
+}
+
 @media (max-width: 767.98px), (hover: none), (pointer: coarse) {
   div.figure,
   .figure,
