@@ -32,7 +32,7 @@
     "href": "about.html#configuration-preserving-optical-clock-transition",
     "title": "What is special about thulium?",
     "section": "Configuration-preserving optical-clock transition",
-    "text": "Configuration-preserving optical-clock transition\nThulium’s lowest-energy fine-structure levels, \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{7/2})6\\text{s}^2\\) and \\([\\text{Xe}]4\\text{f}^{13}(^2\\text{F}^\\text{o}_{5/2})6\\text{s}^2\\), are linked by a 1-Hz-wide optical M1 transition at 1140 nm. The identical electronic configurations of these levels render the transition wavelength immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude4, compared to such atoms, lifting the requirement for cryogenic operation5,6 to realize a highly accurate and stable clock."
+    "text": "Configuration-preserving optical-clock transition\nThulium’s lowest-energy fine-structure levels, \\(4\\text{f}^{13}(^2\\text{F}^\\text{o}_{7/2})6\\text{s}^2\\) and \\(4\\text{f}^{13}(^2\\text{F}^\\text{o}_{5/2})6\\text{s}^2\\), are linked by a 1-Hz-wide optical M1 transition at 1140 nm. The identical electronic configurations of these levels render the transition wavelength immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude4, compared to such atoms, lifting the requirement for cryogenic operation5,6 to realize a highly accurate and stable clock."
   },
   {
     "objectID": "about.html#lucky-set-of-magic-wavelengths",
@@ -53,7 +53,7 @@
     "href": "about.html#microwave-clock-qubit",
     "title": "What is special about thulium?",
     "section": "Microwave clock qubit",
-    "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz, forming a robust microwave clock qubit9. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing."
+    "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.497 GHz, forming a robust microwave clock qubit9. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing.\n\n\n\n\nSimplified energy level diagram of thulium-169 with the cooling transitions, the optical clock transition (1140.1 nm) and the microwave clock transition (1.5 GHz)."
   },
   {
     "objectID": "about.html#deep-measurement-based-squeezing",

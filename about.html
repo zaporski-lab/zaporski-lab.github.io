@@ -527,7 +527,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <p>Thulium is an open-4f-shell lanthanide with one less electron than ytterbium. Its only stable isotope is a boson with a nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span>. Thulium features a rich spectrum of energy levels with convenient properties for a number of applications. In particular, it complements the family of optical-clock atoms, experiencing vastly different systematic shifts and sensitivities to fundamental phenomena. In this context, it is exceptionally well positioned for the future optical-clock transportability and searches for Lorentz Invariance Violation (LIV).</p>
 <section id="configuration-preserving-optical-clock-transition" class="level2">
 <h2 class="anchored" data-anchor-id="configuration-preserving-optical-clock-transition">Configuration-preserving optical-clock transition</h2>
-<p>Thulium’s lowest-energy fine-structure levels, <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{7/2})6\text{s}^2\)</span> and <span class="math inline">\([\text{Xe}]4\text{f}^{13}(^2\text{F}^\text{o}_{5/2})6\text{s}^2\)</span>, are linked by a 1-Hz-wide optical M1 transition at 1140 nm. The identical electronic configurations of these levels render the transition wavelength immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude<span class="citation" data-cites="Golovizin2019"><sup><a href="#ref-Golovizin2019" role="doc-biblioref">4</a></sup></span>, compared to such atoms, lifting the requirement for cryogenic operation<span class="citation" data-cites="Ushijima2015 Hassan25cryo"><sup><a href="#ref-Ushijima2015" role="doc-biblioref">5</a>,<a href="#ref-Hassan25cryo" role="doc-biblioref">6</a></sup></span> to realize a highly accurate and stable clock.</p>
+<p>Thulium’s lowest-energy fine-structure levels, <span class="math inline">\(4\text{f}^{13}(^2\text{F}^\text{o}_{7/2})6\text{s}^2\)</span> and <span class="math inline">\(4\text{f}^{13}(^2\text{F}^\text{o}_{5/2})6\text{s}^2\)</span>, are linked by a 1-Hz-wide optical M1 transition at 1140 nm. The identical electronic configurations of these levels render the transition wavelength immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude<span class="citation" data-cites="Golovizin2019"><sup><a href="#ref-Golovizin2019" role="doc-biblioref">4</a></sup></span>, compared to such atoms, lifting the requirement for cryogenic operation<span class="citation" data-cites="Ushijima2015 Hassan25cryo"><sup><a href="#ref-Ushijima2015" role="doc-biblioref">5</a>,<a href="#ref-Hassan25cryo" role="doc-biblioref">6</a></sup></span> to realize a highly accurate and stable clock.</p>
 </section>
 <section id="lucky-set-of-magic-wavelengths" class="level2">
 <h2 class="anchored" data-anchor-id="lucky-set-of-magic-wavelengths">Lucky set of magic wavelengths</h2>
@@ -540,6 +540,14 @@ document.addEventListener("DOMContentLoaded", () => {
 <section id="microwave-clock-qubit" class="level2">
 <h2 class="anchored" data-anchor-id="microwave-clock-qubit">Microwave clock qubit</h2>
 <p>Because of the nuclear spin <span class="math inline">\(I=\frac{1}{2}\)</span> and the electronic <span class="math inline">\(J=\frac{7}{2}\)</span>, the lowest-energy fine-structure level splits into exactly two hyperfine levels with <span class="math inline">\(F=3\)</span> and <span class="math inline">\(F=4\)</span>. Their <span class="math inline">\(m_F=0\)</span> states are spaced by 1.497 GHz, forming a robust microwave clock qubit<span class="citation" data-cites="mishin2025"><sup><a href="#ref-mishin2025" role="doc-biblioref">9</a></sup></span>. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing.</p>
+<div class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Pictures/thulium_energy_levels.png" class="img-fluid figure-img"></p>
+<figcaption>Simplified energy level diagram of thulium-169 with the cooling transitions, the optical clock transition (1140.1 nm) and the microwave clock transition (1.5 GHz).</figcaption>
+</figure>
+</div>
+</div>
 </section>
 </section>
 <section id="what-are-we-doing-with-it" class="level1">
@@ -647,7 +655,7 @@ Why would I use spin-squeezing if I can interrogate the transition for longer?
 <div id="collapse-quarto-accordion-faq-orlongergsensing-5" class="accordion-collapse collapse" aria-labelledby="heading-quarto-accordion-faq-orlongergsensing-5" data-bs-parent="#quarto-accordion-faq">
 <div class="accordion-body">
 <div class="accordion-body-content">
-<p>Spin-squeezing reduces the interrogation time required to reach maximal measurement resolution. If the measurement campaing relies on a low duty-cycle spectroscopy, or if the signal to be measured is truly static (which it almost never is) and the system does not suffer from drifts, squeezing is indeed redundant. Otherwise, it substantially increases the bandwidth of laser-locking/sensing.</p>
+<p>Spin-squeezing reduces the interrogation time required to reach maximal measurement resolution. If the measurement campaing relies on a low duty-cycle spectroscopy, or if the signal to be measured is truly static and the system does not suffer from drifts, squeezing is indeed redundant. Otherwise, it substantially increases the bandwidth of laser-locking/sensing.</p>
 </div>
 </div>
 </div>
