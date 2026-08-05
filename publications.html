@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,9 +92,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="publications_page.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="publications_page.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -455,7 +476,44 @@ Publications
   });
 })();
 </script>
-<p>Launching in September 2026.</p>
+<div style="display:none">
+<p><span class="citation" data-cites="bringewatt2026">[<a href="#ref-bringewatt2026" role="doc-biblioref">1</a>]</span> <span class="citation" data-cites="Zaporski2025">[<a href="#ref-Zaporski2025" role="doc-biblioref">2</a>]</span> <span class="citation" data-cites="PhysRevX.15.021004">[<a href="#ref-PhysRevX.15.021004" role="doc-biblioref">3</a>]</span> <span class="citation" data-cites="Appel2025">[<a href="#ref-Appel2025" role="doc-biblioref">4</a>]</span> <span class="citation" data-cites="PRXQuantum.4.040343">[<a href="#ref-PRXQuantum.4.040343" role="doc-biblioref">5</a>]</span> <span class="citation" data-cites="PhysRevB.108.075302">[<a href="#ref-PhysRevB.108.075302" role="doc-biblioref">6</a>]</span> <span class="citation" data-cites="Zaporski2023">[<a href="#ref-Zaporski2023" role="doc-biblioref">7</a>]</span> <span class="citation" data-cites="PhysRevX.12.031014">[<a href="#ref-PhysRevX.12.031014" role="doc-biblioref">8</a>]</span> <span class="citation" data-cites="Gangloff2021">[<a href="#ref-Gangloff2021" role="doc-biblioref">9</a>]</span> <span class="citation" data-cites="Jackson2021">[<a href="#ref-Jackson2021" role="doc-biblioref">10</a>]</span> <span class="citation" data-cites="SciPostPhys.7.2.018">[<a href="#ref-SciPostPhys.7.2.018" role="doc-biblioref">11</a>]</span></p>
+</div>
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-bringewatt2026" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://arxiv.org/abs/2602.23332">Butterfly echo protocol for axis-agnostic heisenberg-limited metrology</a> </div><div class="csl-block">J. Bringewatt, L. Zaporski, M. Radzihovsky, J. Albert, A. V. Gorshkov, V. Vuletic, and G. Bentsen, <strong>ArXiv</strong>, 2602.23332 (2026)</div>
+</div>
+<div id="ref-Zaporski2025" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1038/s41586-025-09578-8">Quantum-amplified global-phase spectroscopy on an optical clock transition</a> </div><div class="csl-block">L. Zaporski, Q. Liu, G. Velez, M. Radzihovsky, Z. Li, S. Colombo, E. Pedrozo-Peñafiel, and V. Vuletić, <strong>Nature</strong> 646, 309–314 (2025)</div>
+</div>
+<div id="ref-PhysRevX.15.021004" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1103/PhysRevX.15.021004">Tuning the coherent interaction of an electron qubit and a nuclear magnon</a> </div><div class="csl-block">N. Shofer, L. Zaporski, M. Hayhurst Appel, S. Manna, S. Covre da Silva, A. Ghorbal, U. Haeusler, A. Rastelli, C. Le Gall, M. Gawełczyk, M. Atatüre, and D. A. Gangloff, <strong>Phys. Rev. X</strong> 15, 021004 (2025)</div>
+</div>
+<div id="ref-Appel2025" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1038/s41567-024-02746-z">A many-body quantum register for a spin qubit</a> </div><div class="csl-block">M. H. Appel, A. Ghorbal, N. Shofer, L. Zaporski, S. Manna, S. F. C. da Silva, U. Haeusler, C. Le Gall, A. Rastelli, D. A. Gangloff, and M. Atatüre, <strong>Nature Physics</strong> 21, 368–373 (2025)</div>
+</div>
+<div id="ref-PRXQuantum.4.040343" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1103/PRXQuantum.4.040343">Many-body singlet prepared by a central-spin qubit</a> </div><div class="csl-block">L. Zaporski, S. R. de Wit, T. Isogawa, M. Hayhurst Appel, C. Le Gall, M. Atatüre, and D. A. Gangloff, <strong>PRX Quantum</strong> 4, 040343 (2023)</div>
+</div>
+<div id="ref-PhysRevB.108.075302" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1103/PhysRevB.108.075302">Time-crystalline behavior in central-spin models with heisenberg interactions</a> </div><div class="csl-block">R. Frantzeskakis, J. Van Dyke, L. Zaporski, D. A. Gangloff, C. Le Gall, M. Atatüre, S. E. Economou, and E. Barnes, <strong>Phys. Rev. B</strong> 108, 075302 (2023)</div>
+</div>
+<div id="ref-Zaporski2023" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1038/s41565-022-01282-2">Ideal refocusing of an optically active spin qubit under strong hyperfine interactions</a> </div><div class="csl-block">L. Zaporski, N. Shofer, J. H. Bodey, S. Manna, G. Gillard, M. H. Appel, C. Schimpf, S. F. Covre da Silva, J. Jarman, G. Delamare, G. Park, U. Haeusler, E. A. Chekhovich, A. Rastelli, D. A. Gangloff, M. Atatüre, and C. Le Gall, <strong>Nature Nanotechnology</strong> 18, 257–263 (2023)</div>
+</div>
+<div id="ref-PhysRevX.12.031014" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1103/PhysRevX.12.031014">Optimal purification of a spin ensemble by quantum-algorithmic feedback</a> </div><div class="csl-block">D. M. Jackson, U. Haeusler, L. Zaporski, J. H. Bodey, N. Shofer, E. Clarke, M. Hugues, M. Atatüre, C. Le Gall, and D. A. Gangloff, <strong>Phys. Rev. X</strong> 12, 031014 (2022)</div>
+</div>
+<div id="ref-Gangloff2021" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1038/s41567-021-01344-7">Witnessing quantum correlations in a nuclear ensemble via an electron spin qubit</a> </div><div class="csl-block">D. A. Gangloff, L. Zaporski, J. H. Bodey, C. Bachorz, D. M. Jackson, G. Éthier-Majcher, C. Lang, E. Clarke, M. Hugues, C. Le Gall, and M. Atatüre, <strong>Nature Physics</strong> 17, 1247–1253 (2021)</div>
+</div>
+<div id="ref-Jackson2021" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.1038/s41567-020-01161-4">Quantum sensing of a coherent single spin excitation in a nuclear ensemble</a> </div><div class="csl-block">D. M. Jackson, D. A. Gangloff, J. H. Bodey, L. Zaporski, C. Bachorz, E. Clarke, M. Hugues, C. Le Gall, and M. Atatüre, <strong>Nature Physics</strong> 17, 585–590 (2021)</div>
+</div>
+<div id="ref-SciPostPhys.7.2.018" class="csl-entry" role="listitem">
+<div class="csl-block"><a href="https://doi.org/10.21468/SciPostPhys.7.2.018">Superconvergence of topological entropy in the symbolic dynamics of substitution sequences</a> </div><div class="csl-block">L. Zaporski, and F. Flicker, <strong>SciPost Phys.</strong> 7, 018 (2019)</div>
+</div>
+</div>
 
 
 
