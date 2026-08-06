@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zaporski-lab.github.io/team.html</loc>
-    <lastmod>2026-08-04T20:30:41.164Z</lastmod>
-  </url>
-  <url>
-    <loc>https://zaporski-lab.github.io/news.html</loc>
-    <lastmod>2026-08-01T18:41:50.574Z</lastmod>
-  </url>
-  <url>
-    <loc>https://zaporski-lab.github.io/contact.html</loc>
-    <lastmod>2026-08-01T18:41:40.877Z</lastmod>
-  </url>
-  <url>
-    <loc>https://zaporski-lab.github.io/about.html</loc>
-    <lastmod>2026-08-05T22:24:45.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://zaporski-lab.github.io/index.html</loc>
-    <lastmod>2026-08-03T02:50:15.237Z</lastmod>
+    <loc>https://zaporski-lab.github.io/thulium.html</loc>
+    <lastmod>2026-08-06T14:17:42.688Z</lastmod>
   </url>
   <url>
     <loc>https://zaporski-lab.github.io/publications.html</loc>
-    <lastmod>2026-08-05T22:27:27.667Z</lastmod>
+    <lastmod>2026-08-06T14:19:11.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://zaporski-lab.github.io/contact.html</loc>
+    <lastmod>2026-08-06T16:40:54.419Z</lastmod>
+  </url>
+  <url>
+    <loc>https://zaporski-lab.github.io/index.html</loc>
+    <lastmod>2026-08-06T14:35:13.511Z</lastmod>
+  </url>
+  <url>
+    <loc>https://zaporski-lab.github.io/team.html</loc>
+    <lastmod>2026-08-04T20:30:41.164Z</lastmod>
   </url>
 </urlset>

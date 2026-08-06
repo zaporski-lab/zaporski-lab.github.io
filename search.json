@@ -1,87 +1,87 @@
 [
   {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Team",
-    "section": "",
-    "text": "Meet the team\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\n\nLeon Zaporski\nAssistant Professor\nPhD in Physics | University of Cambridge | 2023\nMMathPhys in Mathematical and Theoretical Physics | University of Oxford | 2019\nEmail | CV\n\n\n\n\n\n\n\n\n\nThis could be you!\nPostdoctoral Researcher / Graduate Student / Undergraduate Research Assistant\nWe have a number of openings for motivated prospective team members. Contact us to find out more."
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "Zaporski Lab",
-    "section": "",
-    "text": "Latest news\n\n\n\n\nLaunching in September 2026."
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Zaporski Lab",
-    "section": "",
-    "text": "Contact Us\n\n\n\n\nLaunching in September 2026."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html",
+    "href": "thulium.html",
+    "title": "Thulium",
     "section": "",
     "text": "Thulium-169\n\n\nA new platform for Cavity QED and Quantum Metrology"
   },
   {
-    "objectID": "about.html#configuration-preserving-optical-clock-transition",
-    "href": "about.html#configuration-preserving-optical-clock-transition",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#configuration-preserving-optical-clock-transition",
+    "href": "thulium.html#configuration-preserving-optical-clock-transition",
+    "title": "Thulium",
     "section": "Configuration-preserving optical-clock transition",
     "text": "Configuration-preserving optical-clock transition\nThulium’s lowest-energy fine-structure levels, \\(4\\text{f}^{13}(^2\\text{F}^\\text{o}_{7/2})6\\text{s}^2\\) and \\(4\\text{f}^{13}(^2\\text{F}^\\text{o}_{5/2})6\\text{s}^2\\), are linked by a 1-Hz-wide optical M1 transition at 1140 nm. The identical electronic configurations of these levels render the transition wavelength immune to a great deal of perturbations which affect the clock transitions in divalent atoms like ytterbium or strontium. Most notably, thulium’s black-body radiation sensitivity is reduced by three orders of magnitude7, compared to such atoms, lifting the requirement for cryogenic operation8,9 to realize a highly accurate and stable clock."
   },
   {
-    "objectID": "about.html#lucky-set-of-magic-wavelengths",
-    "href": "about.html#lucky-set-of-magic-wavelengths",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#lucky-set-of-magic-wavelengths",
+    "href": "thulium.html#lucky-set-of-magic-wavelengths",
+    "title": "Thulium",
     "section": "Lucky set of magic wavelengths",
     "text": "Lucky set of magic wavelengths\nFor the 1140-nm clock transition there are two known magic wavelengths7, falling close to 813 nm and 1064 nm. Both of them are quite handy in their own ways. The laser technology is very mature around 1064 nm and large amounts of optical power can be readily generated in this spectral region. While a bit less convenient in that respect, the 813 nm magic wavelength falls very close to the magic wavelength of strontium’s 698 nm optical clock transition. With precise polarization tuning, this can be utilized for dual-species magic trapping and differential spectroscopy in search for physics beyond Standard Model10."
   },
   {
-    "objectID": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
-    "href": "about.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
+    "href": "thulium.html#cooling-transitions-spanning-a-broad-range-of-linewidths",
+    "title": "Thulium",
     "section": "Cooling transitions spanning a broad range of linewidths",
     "text": "Cooling transitions spanning a broad range of linewidths\nAmong the forest of spectral lines, at least three optical transitions present very high cyclicities and a convenient hierarchy of linewidths. The three-color magneto-optical trap operation starts from the cooling on a 10-MHz-wide transition (410.6 nm), goes through the second stage on a 350-kHz-wide transition (530.7 nm), and concludes with the final stage on an 8-kHz-wide transition (506.2 nm). This provides a low-loss cooling mechanism that brings the atoms to sub-\\(\\mu\\)K temperatures prior to loading them into an optical lattice11."
   },
   {
-    "objectID": "about.html#microwave-clock-qubit",
-    "href": "about.html#microwave-clock-qubit",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#microwave-clock-qubit",
+    "href": "thulium.html#microwave-clock-qubit",
+    "title": "Thulium",
     "section": "Microwave clock qubit",
     "text": "Microwave clock qubit\nBecause of the nuclear spin \\(I=\\frac{1}{2}\\) and the electronic \\(J=\\frac{7}{2}\\), the lowest-energy fine-structure level splits into exactly two hyperfine levels with \\(F=3\\) and \\(F=4\\). Their \\(m_F=0\\) states are spaced by 1.5 GHz, forming a robust microwave clock qubit12. Such a clean realization of this encoding is unusual for lanthanides, and is more typical to alkali atoms, like Cesium and Rubidium, where it has been a workhorse of atomic quantum information processing.\n\n\n\n\nSimplified energy level diagram of thulium-169 with the cooling transitions, the optical clock transition (1140.1 nm) and the microwave clock transition (1.5 GHz)."
   },
   {
-    "objectID": "about.html#deep-measurement-based-squeezing",
-    "href": "about.html#deep-measurement-based-squeezing",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#deep-measurement-based-squeezing",
+    "href": "thulium.html#deep-measurement-based-squeezing",
+    "title": "Thulium",
     "section": "Deep measurement-based squeezing",
     "text": "Deep measurement-based squeezing\nThe hyperfine structure of thulium, and the convenient qubit encoding, drastically simplify generating entanglement through techniques of cavity QED. They suppress residual spin pumping during dispersive cavity readout, allowing to implement deep measurement-based squeezing in a system comprised of \\(N=10^4-10^6\\) atoms14. With the cavity design optimized for large collective cooperativity and high collection efficiency, we are headed towards over 20 dB of metrological gain in an optical-clock atom system - well exceeding the proof-of-concept demonstrations15–18 from small-scale systems, often limited in size by spectral proximity of spin pumping transitions to dispersively-shifted cavity resonance."
   },
   {
-    "objectID": "about.html#broadband-search-for-lorentz-invariance-violation",
-    "href": "about.html#broadband-search-for-lorentz-invariance-violation",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#broadband-search-for-lorentz-invariance-violation",
+    "href": "thulium.html#broadband-search-for-lorentz-invariance-violation",
+    "title": "Thulium",
     "section": "Broadband search for Lorentz Invariance Violation",
     "text": "Broadband search for Lorentz Invariance Violation\nTo date, the most stringent tests of LIV in the electron sector have exploited the metastable levels in Yb\\({}^+\\), populated via an optical E3 transition19,20. The lowest-energy levels in thulium share the same electronic configuration and hyperfine structure as these metastable Yb\\({}^+\\) levels, making them similarly sensitive to LIV21. At the same time, neutral atoms can be trapped in much larger numbers than ions. By performing analogous LIV tests with neutral thulium, we can therefore significantly broaden the bandwidth of detectable signals, enabling searches for LIV backgrounds associated with ultralight dark matter22."
   },
   {
-    "objectID": "about.html#active-optical-frequency-standard",
-    "href": "about.html#active-optical-frequency-standard",
-    "title": "What is special about thulium?",
+    "objectID": "thulium.html#active-optical-frequency-standard",
+    "href": "thulium.html#active-optical-frequency-standard",
+    "title": "Thulium",
     "section": "Active optical frequency standard",
     "text": "Active optical frequency standard\nThanks to its low black-body radiation sensitivity, thulium is an excellent candidate for a transportable optical clock. One technological barrier towards this goal is incompatibility of modern narrow-linewidth lasers with transport. Achieving continuous-wave lasing on the clock transition would completely bypass the need for such a technology, and we plan to leverage our Cavity QED setup to do exactly that23. We have identified a convenient collective repumping scheme with a potential to cancel pump-induced Stark shifts through a highly-symmetric lasing cycle.\n\n\n\n\nTransitions involved in the operation of continuous-wave optical clock laser. In steady-state, the system undergoes stimulated emission of coherent 564.4-nm (3) and 1140.1-nm (4) light into the cavity mode.\n\n\n\n\nInterested in joining the lab? Contact us."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications\n\n\n\n\n\n[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]\n\n\n\nButterfly echo protocol for axis-agnostic heisenberg-limited metrology J. Bringewatt, L. Zaporski, M. Radzihovsky, J. Albert, A. V. Gorshkov, V. Vuletic, and G. Bentsen, ArXiv, 2602.23332 (2026)\n\n\nQuantum-amplified global-phase spectroscopy on an optical clock transition L. Zaporski, Q. Liu, G. Velez, M. Radzihovsky, Z. Li, S. Colombo, E. Pedrozo-Peñafiel, and V. Vuletić, Nature 646, 309–314 (2025)\n\n\nTuning the coherent interaction of an electron qubit and a nuclear magnon N. Shofer, L. Zaporski, M. Hayhurst Appel, S. Manna, S. Covre da Silva, A. Ghorbal, U. Haeusler, A. Rastelli, C. Le Gall, M. Gawełczyk, M. Atatüre, and D. A. Gangloff, Phys. Rev. X 15, 021004 (2025)\n\n\nA many-body quantum register for a spin qubit M. H. Appel, A. Ghorbal, N. Shofer, L. Zaporski, S. Manna, S. F. C. da Silva, U. Haeusler, C. Le Gall, A. Rastelli, D. A. Gangloff, and M. Atatüre, Nature Physics 21, 368–373 (2025)\n\n\nMany-body singlet prepared by a central-spin qubit L. Zaporski, S. R. de Wit, T. Isogawa, M. Hayhurst Appel, C. Le Gall, M. Atatüre, and D. A. Gangloff, PRX Quantum 4, 040343 (2023)\n\n\nTime-crystalline behavior in central-spin models with heisenberg interactions R. Frantzeskakis, J. Van Dyke, L. Zaporski, D. A. Gangloff, C. Le Gall, M. Atatüre, S. E. Economou, and E. Barnes, Phys. Rev. B 108, 075302 (2023)\n\n\nIdeal refocusing of an optically active spin qubit under strong hyperfine interactions L. Zaporski, N. Shofer, J. H. Bodey, S. Manna, G. Gillard, M. H. Appel, C. Schimpf, S. F. Covre da Silva, J. Jarman, G. Delamare, G. Park, U. Haeusler, E. A. Chekhovich, A. Rastelli, D. A. Gangloff, M. Atatüre, and C. Le Gall, Nature Nanotechnology 18, 257–263 (2023)\n\n\nOptimal purification of a spin ensemble by quantum-algorithmic feedback D. M. Jackson, U. Haeusler, L. Zaporski, J. H. Bodey, N. Shofer, E. Clarke, M. Hugues, M. Atatüre, C. Le Gall, and D. A. Gangloff, Phys. Rev. X 12, 031014 (2022)\n\n\nWitnessing quantum correlations in a nuclear ensemble via an electron spin qubit D. A. Gangloff, L. Zaporski, J. H. Bodey, C. Bachorz, D. M. Jackson, G. Éthier-Majcher, C. Lang, E. Clarke, M. Hugues, C. Le Gall, and M. Atatüre, Nature Physics 17, 1247–1253 (2021)\n\n\nQuantum sensing of a coherent single spin excitation in a nuclear ensemble D. M. Jackson, D. A. Gangloff, J. H. Bodey, L. Zaporski, C. Bachorz, E. Clarke, M. Hugues, C. Le Gall, and M. Atatüre, Nature Physics 17, 585–590 (2021)\n\n\nSuperconvergence of topological entropy in the symbolic dynamics of substitution sequences L. Zaporski, and F. Flicker, SciPost Phys. 7, 018 (2019)"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Us",
+    "section": "",
+    "text": "Contact Us"
+  },
+  {
+    "objectID": "contact.html#open-positions",
+    "href": "contact.html#open-positions",
+    "title": "Contact Us",
+    "section": "Open positions",
+    "text": "Open positions\nWe have a number of open positions for graduate students, postdoctoral researchers and undergraduate researchers!\n\nProspective graduate students should apply to the PhD program in Physics & Astronomy, and are strongly encouraged to directly reach out to us via email.\nWe are also looking for an experimental-AMO postdoctoral researcher, and can provide full financial support at the NIH postdoc 3 level for up to 3 years. We also encourage interested candidates to consider applying for the Miller Postdoctoral Prize Fellowships. Contact us via email if you are interested!\nProspective undergraduate researchers are encouraged to read about URSCA and email us directly with any questions. We are happy to assign projects that teach transferable AMO skills, such as handling lasers and (opto)electronics, or performing the relevant simulations/calculations."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "What do we do?",
     "section": "",
-    "text": "Zaporski Lab\n\n\nQuantum Metrology and Cavity QED\n\n\nJohns Hopkins University"
+    "text": "Zaporski Lab\n\n\nQuantum Metrology and Cavity QED\n\n\nat The Johns Hopkins University"
   },
   {
     "objectID": "index.html#we-are-funded-by",
@@ -91,10 +91,10 @@
     "text": "We are funded by:"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Zaporski Lab",
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
     "section": "",
-    "text": "Publications\n\n\n\n\n\n[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]\n\n\n\nButterfly echo protocol for axis-agnostic heisenberg-limited metrology J. Bringewatt, L. Zaporski, M. Radzihovsky, J. Albert, A. V. Gorshkov, V. Vuletic, and G. Bentsen, ArXiv, 2602.23332 (2026)\n\n\nQuantum-amplified global-phase spectroscopy on an optical clock transition L. Zaporski, Q. Liu, G. Velez, M. Radzihovsky, Z. Li, S. Colombo, E. Pedrozo-Peñafiel, and V. Vuletić, Nature 646, 309–314 (2025)\n\n\nTuning the coherent interaction of an electron qubit and a nuclear magnon N. Shofer, L. Zaporski, M. Hayhurst Appel, S. Manna, S. Covre da Silva, A. Ghorbal, U. Haeusler, A. Rastelli, C. Le Gall, M. Gawełczyk, M. Atatüre, and D. A. Gangloff, Phys. Rev. X 15, 021004 (2025)\n\n\nA many-body quantum register for a spin qubit M. H. Appel, A. Ghorbal, N. Shofer, L. Zaporski, S. Manna, S. F. C. da Silva, U. Haeusler, C. Le Gall, A. Rastelli, D. A. Gangloff, and M. Atatüre, Nature Physics 21, 368–373 (2025)\n\n\nMany-body singlet prepared by a central-spin qubit L. Zaporski, S. R. de Wit, T. Isogawa, M. Hayhurst Appel, C. Le Gall, M. Atatüre, and D. A. Gangloff, PRX Quantum 4, 040343 (2023)\n\n\nTime-crystalline behavior in central-spin models with heisenberg interactions R. Frantzeskakis, J. Van Dyke, L. Zaporski, D. A. Gangloff, C. Le Gall, M. Atatüre, S. E. Economou, and E. Barnes, Phys. Rev. B 108, 075302 (2023)\n\n\nIdeal refocusing of an optically active spin qubit under strong hyperfine interactions L. Zaporski, N. Shofer, J. H. Bodey, S. Manna, G. Gillard, M. H. Appel, C. Schimpf, S. F. Covre da Silva, J. Jarman, G. Delamare, G. Park, U. Haeusler, E. A. Chekhovich, A. Rastelli, D. A. Gangloff, M. Atatüre, and C. Le Gall, Nature Nanotechnology 18, 257–263 (2023)\n\n\nOptimal purification of a spin ensemble by quantum-algorithmic feedback D. M. Jackson, U. Haeusler, L. Zaporski, J. H. Bodey, N. Shofer, E. Clarke, M. Hugues, M. Atatüre, C. Le Gall, and D. A. Gangloff, Phys. Rev. X 12, 031014 (2022)\n\n\nWitnessing quantum correlations in a nuclear ensemble via an electron spin qubit D. A. Gangloff, L. Zaporski, J. H. Bodey, C. Bachorz, D. M. Jackson, G. Éthier-Majcher, C. Lang, E. Clarke, M. Hugues, C. Le Gall, and M. Atatüre, Nature Physics 17, 1247–1253 (2021)\n\n\nQuantum sensing of a coherent single spin excitation in a nuclear ensemble D. M. Jackson, D. A. Gangloff, J. H. Bodey, L. Zaporski, C. Bachorz, E. Clarke, M. Hugues, C. Le Gall, and M. Atatüre, Nature Physics 17, 585–590 (2021)\n\n\nSuperconvergence of topological entropy in the symbolic dynamics of substitution sequences L. Zaporski, and F. Flicker, SciPost Phys. 7, 018 (2019)"
+    "text": "Meet the team\n\n\n\n\n\n\n\n\n\n\n\nPrincipal Investigator\n\n\n\nLeon Zaporski\nAssistant Professor\nPhD in Physics | University of Cambridge | 2023\nMMathPhys in Mathematical and Theoretical Physics | University of Oxford | 2019\nEmail | CV\n\n\n\n\n\n\n\n\n\nThis could be you!\nPostdoctoral Researcher / Graduate Student / Undergraduate Research Assistant\nWe have a number of openings for motivated prospective team members. Contact us to find out more."
   }
 ]
