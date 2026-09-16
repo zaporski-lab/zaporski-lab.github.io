@@ -290,6 +290,11 @@ div.figure,
   height: 100%;
 }
 
+.team-card,
+.team-card .card-body {
+  background-color: #f5f1e8;
+}
+
 @media (max-width: 767.98px), (hover: none), (pointer: coarse) {
   div.figure,
   .figure,
